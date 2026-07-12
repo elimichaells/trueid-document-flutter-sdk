@@ -240,11 +240,12 @@ packages:
     source: hosted
     version: "0.7.7"
   trueid_core:
-    dependency: "direct overridden"
+    dependency: "direct main"
     description:
-      path: "../../trueid_core"
-      relative: true
-    source: path
+      name: trueid_core
+      sha256: "3d05f52696dc1f885ec6d53eddf83ae4694620a9bcf4974716481d1b9166db64"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.0.0"
   trueid_document_sdk:
     dependency: "direct main"
