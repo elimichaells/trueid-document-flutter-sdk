@@ -9,7 +9,7 @@
   MRZ-aware auto-capture, and confirm/retake previews cropped to the guide
   frame.
 * Additional information step (phone/email, per organization settings).
-* Trailing selfie with guided liveness (shared engine with `trueid_sdk`).
+* Trailing selfie with guided liveness (shared engine from `trueid_core`).
 * Server-side OCR/MRZ extraction with an on-screen review of extracted
   details before anything is saved.
 * Final screen honors the organization's review mode: instant

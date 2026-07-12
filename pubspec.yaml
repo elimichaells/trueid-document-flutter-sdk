@@ -19,9 +19,9 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  # Shared TrueIDSdk.initialize() (secret/publishable key) — one init call
-  # configures both the PIN+selfie and document-verification SDKs.
-  trueid_sdk: ^2.0.0
+  # Shared TrueIdSdk.initialize() (secret/publishable key) — one init call
+  # configures every TrueID product package, including document verification.
+  trueid_core: ^1.0.0
 
 dev_dependencies:
   flutter_test:

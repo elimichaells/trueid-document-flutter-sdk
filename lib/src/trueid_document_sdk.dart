@@ -3,9 +3,9 @@ import 'models.dart';
 
 /// Main entry point for the TrueID Document SDK.
 ///
-/// Call `TrueIdSdk.initialize()` (from the `trueid_sdk` package) once before
-/// using [verifyDocument] — both SDKs share the same secret/publishable key
-/// setup.
+/// Call `TrueIdSdk.initialize()` (from the `trueid_core` package) once
+/// before using [verifyDocument] — every TrueID product package shares the
+/// same secret/publishable key setup.
 ///
 /// ```dart
 /// final result = await TrueIdDocumentSdk.verifyDocument();

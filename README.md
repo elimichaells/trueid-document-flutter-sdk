@@ -11,9 +11,11 @@ with the same design language, driven by the same organization dashboard
 settings (allowed document types, brand colors, review mode, additional-info
 fields).
 
-For Ghana Card **PIN + selfie (NIA)** verification, NFC chip reading, and the
-hosted browser flow, use the companion [`trueid_sdk`](https://pub.dev/packages/trueid_sdk)
-package — both share one `TrueIdSdk.initialize()` call.
+For Ghana Card **PIN + selfie (NIA)** verification, use
+[`trueid_nia_sdk`](https://pub.dev/packages/trueid_nia_sdk); for the hosted
+browser flow, use [`trueid_hosted_sdk`](https://pub.dev/packages/trueid_hosted_sdk).
+Every TrueID product package shares one `TrueIdSdk.initialize()` call from
+[`trueid_core`](https://pub.dev/packages/trueid_core).
 
 ## Features
 
@@ -26,7 +28,7 @@ package — both share one `TrueIdSdk.initialize()` call.
   app.trueid.info; change them there without shipping an app update
 - **Additional information step** — phone/email collection per your settings
 - **Selfie with guided liveness** — head-turn challenge + countdown, shared
-  engine with `trueid_sdk`
+  engine from `trueid_core`
 - **Review of extracted details** — server-side OCR/MRZ extraction shown to
   the user before anything is saved
 - **Review-mode aware result** — instant "Verification Complete" or
@@ -46,7 +48,7 @@ package — both share one `TrueIdSdk.initialize()` call.
 
 ```yaml
 dependencies:
-  trueid_sdk: ^2.0.0
+  trueid_core: ^1.0.0
   trueid_document_sdk: ^1.0.0
 ```
 
@@ -79,7 +81,7 @@ class MainActivity : FlutterFragmentActivity()
 ## Quick Start
 
 ```dart
-import 'package:trueid_sdk/trueid_sdk.dart';
+import 'package:trueid_core/trueid_core.dart';
 import 'package:trueid_document_sdk/trueid_document_sdk.dart';
 
 void main() async {

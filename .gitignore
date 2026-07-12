@@ -31,3 +31,6 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 /build/
 /coverage/
+
+# Local-only dependency overrides used before packages are published
+pubspec_overrides.yaml
