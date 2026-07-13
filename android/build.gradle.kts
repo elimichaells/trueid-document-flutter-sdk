@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.trueid.sdk.documentflutter"
-version = "1.0.0"
+version = "1.0.1"
 
 android {
     namespace = "com.trueid.sdk.documentflutter"
@@ -36,6 +36,6 @@ dependencies {
     if (localDocumentSdk != null) {
         add("implementation", localDocumentSdk)
     } else {
-        add("implementation", "com.trueid.sdk:trueid-document-sdk:1.0.0")
+        add("implementation", "com.trueid.sdk:trueid-document-sdk:1.1.1")
     }
 }

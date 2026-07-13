@@ -1,6 +1,6 @@
 name: trueid_document_sdk
 description: Flutter plugin for TrueID standard document verification — front/back card or passport data-page capture, additional info, and selfie liveness.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/elimichaells/trueid-document-flutter-sdk
 repository: https://github.com/elimichaells/trueid-document-flutter-sdk
 issue_tracker: https://github.com/elimichaells/trueid-document-flutter-sdk/issues
@@ -21,7 +21,7 @@ dependencies:
     sdk: flutter
   # Shared TrueIdSdk.initialize() (secret/publishable key) — one init call
   # configures every TrueID product package, including document verification.
-  trueid_core: ^1.0.0
+  trueid_core: ^1.0.1
 
 dev_dependencies:
   flutter_test:
